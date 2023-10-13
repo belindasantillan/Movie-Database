@@ -1,15 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Database</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
     <script src="movies.js" defer></script>
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="movies__body">
+    <section>
+      <nav class="nav">
+        <a href="./index.html">
+          <figure class="logo__wrapper">
+            <img class="logo" src="/assets/MDE Logo.PNG" alt="" />
+          </figure>
+        </a>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="./index.html"
+              class="nav__link--anchor nav__link--underline"
+              >Home</a
+            >
+          </li>
+          <li class="nav__link">
+            <a href="./movies.html" class="nav__link--anchor nav__link--primary"
+              >Movies</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <main id="movies__main">
+      <section>
+        <div class="movies__background">
+            <div class="movies__container">
+                <div class="movies__header">
+                    <label class="movies__label">Explore Movies</label>
+                    <input class="movies__search search" type="text" placeholder="Search by Keyword"><a href="" class="movies__search--anchor"><i class="fa fa-search"></i></a></input>
+                </div>
+                <div class="movies__section--wrapper">
+                    <h2 class="movies__search-results">
+                        Search Results:
+                    </h2>
+                    <div class="movies__list">
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie__wrapper">
+                            <figure class="movie__img--wrapper">
+                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+                            </figure>
+                            <div class="movie__content--wrapper">
+                                <h3 class="movie__title">Hunger Games</h3>
+                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+                                <div class="movie__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="movies__footer">Copyright &copy; MDE</footer>
+  </body>
 </html>
