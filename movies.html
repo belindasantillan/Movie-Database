@@ -41,110 +41,23 @@
     <main id="movies__main">
       <section>
         <div class="movies__background">
-            <div class="movies__container">
-                <div class="movies__header">
-                    <label class="movies__label">Explore Movies</label>
-                    <input class="movies__search search" type="text" placeholder="Search by Keyword"><a href="" class="movies__search--anchor"><i class="fa fa-search"></i></a></input>
-                </div>
-                <div class="movies__section--wrapper">
-                    <h2 class="movies__search-results">
-                        Search Results:
-                    </h2>
-                    <div class="movies__list">
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="movie__wrapper">
-                            <figure class="movie__img--wrapper">
-                                <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
-                            </figure>
-                            <div class="movie__content--wrapper">
-                                <h3 class="movie__title">Hunger Games</h3>
-                                <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
-                                <div class="movie__rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+          <div class="movies__container">
+            <div class="movies__header">
+              <label class="movies__label">Explore Movies</label>
+              <input class="movies__search search" type="text" placeholder="Search by Keyword" onchange="onSearchMovies(event)"/>
+              <button class="movies__search--btn"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="movies__section--wrapper">
+              <h2 class="movies__search-results">Search Results: </h2>
+                <figure class="results__banner--wrapper">
+                  <img src="./assets/Results IMG.png" class="results__banner" alt="">
+                </figure>
+                <div class="movies__list">
+                  
+                
                 </div>
             </div>
+          </div>
         </div>
       </section>
     </main>
@@ -152,3 +65,26 @@
     <footer class="movies__footer">Copyright &copy; MDE</footer>
   </body>
 </html>
+
+
+<!-- 
+<div class="movie">
+    <figure class="movie__img--wrapper">
+        <img src="./assets/Movie IMG Example.jpg" class="movie__img" alt="">
+    </figure>
+    <div class="movie__content--wrapper">
+        <h3 class="movie__title">Hunger Games</h3>
+        <p class="movie__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate, iure praesentium nihil recusandae aut molestias ut deserunt. Eos, esse.</p>
+        <div class="movie__sub-info">
+          <h6 class="movie__rated">Rated: PG-13</h6>
+          <h6 class="movie__runtime">Run Time: 146 mins</h6>
+        </div>
+        <div class="movie__rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </div>
+</div>
+ -->
