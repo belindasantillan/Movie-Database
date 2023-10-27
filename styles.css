@@ -155,9 +155,6 @@ header {
 }
 
 .search__btn:active {
-    border: 3px solid #764ea3;
-    background-color: transparent;
-    color: #764ea3;
     transform: translateY(2px);
 }
 
@@ -211,7 +208,7 @@ header {
     transition: all 100ms ease;
 }
 
-.home__spinner {
+.spinner {
     font-size: 24px;
     position: absolute;
     animation: spin 900ms infinite linear;
@@ -232,7 +229,7 @@ header {
     
 }
 
-.home__loading .home__spinner {
+.home__loading .spinner {
     visibility: visible;
     opacity: 1;
 }
@@ -241,7 +238,6 @@ header {
     visibility: hidden;
     opacity: 0;
 }
-
 
 
 /* MOVIES PAGE */
@@ -267,15 +263,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .movies__header {
     height: 70px;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
 } 
 
 .movies__label {
@@ -290,6 +282,7 @@ header {
     border-radius: 16px;
     padding: 8px 40px 8px 28px;
     font-size: 18px;
+    outline: none;
 }
 
 .movies__search--btn:hover {
@@ -324,7 +317,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 24px;
+    margin: 20px;
     background-color: #bb95e6;
     border-radius: 12px;
     box-shadow: 0px 0px 7px #242424;
@@ -332,10 +325,9 @@ header {
 
 .movie {
     display: flex;
-    justify-content: center;
     align-items: start;
     width: calc(100% / 3);
-    padding: 10px;
+    padding: 16px;
 }
 
 .movie__img--wrapper {
@@ -344,7 +336,7 @@ header {
 
 .movie__img {
     width: 125px;
-    height: 175px;
+    height: 150px;
 }
 
 .movie__content--wrapper {
@@ -362,7 +354,6 @@ header {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
-    display: none;
 }
 
 .results__banner {
@@ -388,7 +379,7 @@ footer {
 
 /* RESPONSIVENESS */
 
-/* TABLETS, LARGE SMARTPHONES */
+/* TABLETS, LARGE SMARTPHONES, SMALL PHONES */
 @media (max-width: 900px) {
 
     .header__content--wrapper {
@@ -398,15 +389,6 @@ footer {
     .header__img {
         max-width: 400px;
     }
-
-    .movie__img {
-        width: 100px;
-        height: 150px;
-    }
-}
-
-/* TABLETS, LARGE SMARTPHONES, SMALL PHONES */
-@media (max-width: 750px) {
 
     .movies__section--wrapper {
         width: 100%;
@@ -432,7 +414,28 @@ footer {
 }
 
 /* LARGE SMARTPHONES, SMALL PHONES */
-@media (max-width: 525px) {
+@media (max-width: 675px) {
+
+    .movie {
+        flex-direction: column-reverse;
+    }
+
+    .movie__year {
+        display: none;
+    }
+
+    .movie__content--wrapper {
+        margin: 0;
+    }
+   
+    .movie__title {
+        margin-bottom: 8px;
+    }
+
+}
+
+/* SMALL PHONES */
+@media (max-width: 545px) {
 
     .header__content--wrapper {
         max-width: 400px;
@@ -450,11 +453,51 @@ footer {
         display: none;
     }
    
+    .movies__label {
+        margin-right: 12px;
+    }
 
+    .movies__search--btn {
+        margin-left: 8px;
+    }
+
+    .movies__search {
+        padding: 6px 20px 6px 12px;
+        font-size: 15px;
+    }
+
+    .movies__header {
+        margin-bottom: 0;
+    }
+
+    .movies__search-results {
+        margin-top: 16px 0 0 16px;
+    }
+
+    .movies__list {
+        margin: 20px 16px;
+    }
+
+    .movies__container {
+        padding: 12px 20px;
+    }
 }
 
-/* SMALL PHONES */
-@media (max-width: 455px) {
+/* SMALLER PHONES */
+@media (max-width: 470px) {
+
+    .nav {
+        height: 75px;
+    }
+
+    .logo {
+        height: 70px;
+        width: 100px;
+    }
+
+    .nav__link--primary {
+        padding: 12px 24px;
+    }
 
     .header__content--wrapper {
         max-width: 275px;

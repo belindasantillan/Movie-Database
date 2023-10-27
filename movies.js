@@ -13,19 +13,19 @@ async function onSearchMovies(event) {
     renderMovies(keyword);
 }
 
+
 async function renderMovies(keyword) {
     const movies = await fetch(`http://www.omdbapi.com/?apikey=3846bb22&s=${keyword}`);
     const moviesResponse = await movies.json();
     const moviesData = moviesResponse.Search;
 
-    if (!moviesData) {
-        return document.querySelector('.results__banner--wrapper').style.display = "block"
+    if (moviesData) {
+        moviesListEl.innerHTML = moviesData.map((movie) => movieHtml(movie)).slice(0,6).join('');
     }
     else {
-        document.querySelector('.results__banner--wrapper').style.display = "none"
-        return moviesListEl.innerHTML = moviesData.map((movie) => movieHtml(movie)).slice(0,6).join('');
+        moviesListEl.innerHTML = noResultsBanner();
     }
-    
+
 }
 
 
@@ -41,6 +41,11 @@ return `<div class="movie">
 </div>`
 }
 
+function noResultsBanner() {
+    return `<figure class="results__banner--wrapper">
+    <img src="./assets/Results IMG.png" class="results__banner" alt="">
+    </figure>`
+}
 
 renderMovies(keyword);
 
