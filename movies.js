@@ -16,7 +16,7 @@ async function onSearchMovies(event) {
 }
 
 async function renderMovies(keyword) {
-    const movies = await fetch(`http://www.omdbapi.com/?apikey=3846bb22&s=${keyword}`);
+    const movies = await fetch(`https://www.omdbapi.com/?apikey=3846bb22&s=${keyword}`);
     const moviesResponse = await movies.json();
     const moviesData = moviesResponse.Search;
 

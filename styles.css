@@ -346,12 +346,12 @@ header {
 }
 
 .skeleton {
-    background-color: rgb(140, 140, 140);
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.801), rgba(128, 128, 128, 0.185));
 }
 
 .skeleton__title {
     margin-bottom: 12px;
-    width: 75px;
+    width: 70px;
     height: 18px;
 }
 
