@@ -7,12 +7,13 @@
 const moviesListEl = document.querySelector(".movies__list");
 const keyword = localStorage.getItem("keyword");
 
+skeletonLoading();
 
 async function onSearchMovies(event) {
     const keyword = event.target.value;
+    skeletonLoading();
     renderMovies(keyword);
 }
-
 
 async function renderMovies(keyword) {
     const movies = await fetch(`http://www.omdbapi.com/?apikey=3846bb22&s=${keyword}`);
@@ -28,6 +29,21 @@ async function renderMovies(keyword) {
 
 }
 
+function skeletonLoading() {
+    return moviesListEl.innerHTML = new Array(6).fill(0).map((elem) => skeletonLoadingHtml()).join('');
+}
+
+function skeletonLoadingHtml() {
+ return `<div class="movie">
+<div class="movie__img--wrapper">
+    <div class="skeleton movie__img"></div>
+</div>
+<div class="movie__content--wrapper">
+    <div class="skeleton skeleton__title"></div>
+    <div class="skeleton skeleton__year"></div>
+</div>
+</div>`
+}
 
 function movieHtml(movie) {
 return `<div class="movie">
