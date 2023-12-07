@@ -30,7 +30,7 @@ async function renderMovies(keyword) {
 }
 
 function skeletonLoading() {
-    return moviesListEl.innerHTML = new Array(6).fill(0).map((elem) => skeletonLoadingHtml()).join('');
+    return moviesListEl.innerHTML = new Array(6).fill(0).map((_) => skeletonLoadingHtml()).join('');
 }
 
 function skeletonLoadingHtml() {
